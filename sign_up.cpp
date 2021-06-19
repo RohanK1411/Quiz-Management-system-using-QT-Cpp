@@ -19,7 +19,7 @@ sign_up::~sign_up()
 void sign_up::on_sign_up_2_clicked()
 {
     QSqlDatabase pq = QSqlDatabase::addDatabase("QSQLITE");
-    pq.setDatabaseName("C:/Users/Rohan Katta/Downloads/DB/Mydb.sqlite");
+    pq.setDatabaseName("Your file location");
     if(pq.open())
     {
         fname = ui->firstname->text();
