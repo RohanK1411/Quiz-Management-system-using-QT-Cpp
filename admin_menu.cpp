@@ -26,9 +26,9 @@ Admin_Menu::~Admin_Menu()
 void Admin_Menu::on_set_question_clicked()
 {
 
-    remove("C:/Users/Rohan Katta/Documents/Files/myfile.dat");
-    remove("C:/Users/Rohan Katta/Documents/Files/myans.dat");
-    remove("C:/Users/Rohan Katta/Documents/Files/myque.dat");
+    remove("Your file location");
+    remove("Your file location");
+    remove("Your file location");
     Number num;
     hide();
     num.exec();
@@ -36,7 +36,7 @@ void Admin_Menu::on_set_question_clicked()
     int n1 = num.Get_number();
     int n2 = num.Get_point();
     ofstream out;
-    out.open("C:/Users/Rohan Katta/Documents/Files/myque.dat",ios::out|ios::app);
+    out.open("Your file location",ios::out|ios::app);
     out << n1 << endl;
     out << n2 << endl;
     out.close();
@@ -62,13 +62,13 @@ void Admin_Menu::on_view_qestion_clicked()
 {
     ifstream infile;
     ifstream inans;
-    infile.open("C:/Users/Rohan Katta/Documents/Files/myfile.dat");
-    inans.open("C:/Users/Rohan Katta/Documents/Files/myans.dat");
+    infile.open("Your file location");
+    inans.open("Your file location");
 
     string question,op1,op2,op3,op4,ans;
 
     ifstream out;
-    out.open("C:/Users/Rohan Katta/Documents/Files/myque.dat");
+    out.open("Your file location");
     int n1;
     out >> n1;
     for(int i=0;i<n1;i++)
