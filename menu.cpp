@@ -43,21 +43,21 @@ void Menu::on_Proceed_clicked()
         Show_user_question user;
         ifstream infile;
         QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("C:/Users/Rohan Katta/Downloads/DB/Mydb.sqlite");
+        db.setDatabaseName("Your file location");
 
 
 
         ifstream inans;
 
-        infile.open("C:/Users/Rohan Katta/Documents/Files/myfile.dat");
-        inans.open("C:/Users/Rohan Katta/Documents/Files/myans.dat");
+        infile.open("Your file location");
+        inans.open("Your file location");
         string data;
         string data1;
         string question,op1,op2,op3,op4,ans;
         QString User_ans;
 
         ifstream out;
-        out.open("C:/Users/Rohan Katta/Documents/Files/myque.dat");
+        out.open("Your file location");
         int n1,n2;
         out >> n1;
         out >> n2;
@@ -124,7 +124,7 @@ void Menu::on_Proceed_clicked()
 void Menu::on_Result_clicked()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/Rohan Katta/Downloads/DB/Mydb.sqlite");
+    db.setDatabaseName("Your file location");
     if(db.open()){
         QSqlQuery qry;
         qry.exec("select * from student");
