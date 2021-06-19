@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sign_confirm</class>
+ <widget class="QDialog" name="sign_confirm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1535</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	padding: 5px;
+
+}
+
+
+QToolButton::hover
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #01dcff;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>140</y>
+     <width>741</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: italic 36pt &quot;Calibri&quot;;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>You Registered Successfully</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>420</y>
+     <width>591</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="Home">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>80</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Go To Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>80</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Calibri&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Sign In</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
