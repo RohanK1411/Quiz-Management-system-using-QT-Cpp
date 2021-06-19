@@ -36,7 +36,7 @@ public:
     }
     bool connOpen(){
         db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("C:/Users/Rohan Katta/Downloads/DB/Mydb.sqlite");
+        db.setDatabaseName("Your file location");
         if(db.open())
         {
             qDebug() <<("Connected Successfully.");
